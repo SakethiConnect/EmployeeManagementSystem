@@ -1,0 +1,69 @@
+﻿@model EMS.Web.Models.DepartmentViewModel
+
+@{
+	ViewData["Title"] = "ViewDepartment";
+	Layout = "~/Views/Shared/_EMSLayout.cshtml";
+}
+
+<div class="container">
+	<h2>View Departmet</h2>
+	<hr />
+	<div class="row">
+		<div class="form-group col-5">
+			<label class="control-label fw-bold">Department Code:</label>
+			<label class="form-control-static">@Model.Code</label>
+		</div>
+
+		<div class="form-group col-5">
+			<label class="control-label fw-bold">Department Name:</label>
+			<label class="form-control-static">@Model.DeptName</label>
+		</div>
+
+		<div class="form-group col-5">
+			<label class="control-label fw-bold">Department Name:</label>
+			<label class="form-control-static">@Model.DeptName</label>
+		</div>
+
+
+		<div class="form-group col-5">
+			<label class="control-label fw-bold">Location:</label>
+			<label class="form-control-static">@Model.Location</label>
+		</div>
+		<div class="form-group col-5">
+			<label class="control-label fw-bold">Active:</label>
+			<label class="form-control-static">@Model.Active</label>
+		</div>
+	</div>
+	<hr />
+	<div class="row">
+		<div class="col-10">&nbsp;
+		</div>
+		<div class="col-2">
+			<a class="btn btn-secondary" asp-action="list" asp-controller="department">Go Back</a>
+		</div>
+	</div>
+</div>
+@* 
+<div class="container">
+	<h2>View Departmet</h2>
+	<div class="row">
+		<div class="form-group col-xs-6">
+			@Html.DisplayNameFor(Model => Model.Code):
+			@Html.DisplayFor(Model => Model.Code)
+		</div>
+		<div class="form-group col-xs-6">
+			@Html.DisplayNameFor(Model => Model.DeptName):
+			@Html.DisplayFor(Model => Model.DeptName)
+		</div>
+		<div class="form-group col-xs-6">
+			@Html.DisplayNameFor(Model => Model.Location):
+			@Html.DisplayFor(Model => Model.Location)
+		</div>
+		<div class="form-group col-xs-6">
+			@Html.DisplayNameFor(Model => Model.Active):
+			@Html.DisplayFor(Model => Model.Active)
+		</div>
+
+	</div>
+</div>
+ *@

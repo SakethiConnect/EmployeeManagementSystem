@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>EMS - View Company</title>
+
+    <!-- Link to separate CSS file -->
+    <link rel="stylesheet" href="css/company.css" />
+</head>
+<body>
+
+    <!-- Header with logo, title and profile -->
+    <header class="site-header">
+        <div class="header-left">
+            <!-- Simple inline SVG logo so there's n;;;o external image needed -->
+            <div class="logo" aria-hidden="true">
+                <svg width="40" height="40" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <rect width="24" height="24" rx="4" fill="#0d6efd"></rect>
+                    <path d="M6 12h12M8 8h8M8 16h8" stroke="#fff" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                </svg>
+            </div>
+            <div class="site-title">Employee Management System</div>
+        </div>
+
+        <div class="header-right">
+            <!-- small profile image from a placeholder service; replace URL with your image if available -->
+            <img class="profile-pic" src="https://i.pravatar.cc/40" alt="Profile" />
+            <button id="sidebarToggle" class="menu-btn" aria-label="Toggle menu">☰</button>
+        </div>
+    </header>
+
+    
+
+
+        <!-- Layout wrapper: sidebar + main -->
+        <div class="layout">
+            <nav id="sidebar" class="sidebar">
+                <ul class="nav-list">
+                    <li><a href="Company.html" class="nav-link active">Home</a></li>
+                    <li><a href="Employees.html" class="nav-link">Employees</a></li>
+                    <li><a href="Departments.html" class="nav-link">Departments</a></li>
+                    <li><a href="Career.html" class="nav-link">Career</a></li>
+                    <li><a href="AboutUs.html" class="nav-link">About Us</a></li>
+                </ul>
+            </nav>
+
+            <main class="main-content">
+                <div class="page-header">
+
+                    <a class="btn-edit" href="CompanyEdit.html">Edit Company Info</a>
+                </div>
+
+                <section class="company-section">
+
+                    <table class="info-table">
+                        <tbody>
+                            <tr><td class="label">Company Name</td><td>Innovatech Solutions Pvt. Ltd.</td></tr>
+                            <tr><td class="label">Registration Date</td><td>2023-01-15</td></tr>
+                            <tr><td class="label">Website</td><td><a href="http://www.innovatech.com" target="_blank" rel="noopener">www.innovatech.com</a></td></tr>
+                        </tbody>
+                    </table>
+                </section>
+
+                <section class="company-section">
+
+                    <table class="info-table">
+                        <tbody>
+                            <tr><td class="label">Phone Number</td><td>(555) 123-4567</td></tr>
+                            <tr><td class="label">Email</td><td>info@innovatech.com</td></tr>
+                            <tr><td class="label">TIN</td><td>T1234567890</td></tr>
+                            <tr><td class="label">PAN</td><td>PABCDE1234F</td></tr>
+                            <tr><td class="label">Bank A/C No</td><td>98765432101234567890</td></tr>
+                        </tbody>
+                    </table>
+                </section>
+
+                <section class="company-section">
+                    <h2>Registered Addresses</h2>
+                    <table class="addresses">
+                        <thead>
+                            <tr><th>Type</th><th>Line 1</th><th>Line 2</th><th>City</th><th>State</th><th>Pin</th></tr>
+                        </thead>
+                        <tbody>
+                            <tr><td>Corporate</td><td>101 Tech Park Avenue</td><td>Tower B, 5th Floor</td><td>Metroville</td><td>California</td><td>902100</td></tr>
+                            <tr><td>Branch</td><td>202 Industrial Drive</td><td>Suite 500</td><td>Port City</td><td>Texas</td><td>770012</td></tr>
+                        </tbody>
+                    </table>
+                </section>
+            </main>
+        </div>
+
+
+        <!-- Footer with phone, website and email -->
+        <!--<footer class="site-footer">
+            <div class="footer-inner">
+                <span>📞 +1 (987) 654-3210</span>
+                <span>🌐 <a href="https://www.innovatech.com" target="_blank" rel="noopener">www.innovatech.com</a></span>
+                <span>✉️ <a href="mailto:info@innovatech.com">info@innovatech.com</a></span>
+            </div>
+        </footer>-->
+
+        <!-- Link to separate JS file -->
+        <script src="js/company.js"></script>
+</body>
+</html>
